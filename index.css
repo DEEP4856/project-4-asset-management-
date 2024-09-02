@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    
+}
+
+.navbar {
+    padding: 0; /* Remove padding inside the navbar */
+}
+.navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%; /* Make links full height */
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+}
+
+
+.btn-custom {
+    background-color: #00b4d8;
+    border-color: #00b4d8;
+    padding: 0 20px; 
+    font-family: R;
+    color: #fff;
+    height: 100%; /* Match the height of the navbar */
+    display: flex;
+    align-items: center; /* Align button text vertically */
+    margin: 0; /* Remove any margin */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    border-radius: 0; /* Remove any border-radius to keep it rectangular */
+}
+@media (min-width: 900px) {
+    .btn-custom{
+     margin-right: -12px;
+     padding:  25px 80px;; 
+    }
+ }
+
+ @media (max-width:700px) {
+    .nav_li{
+       display: none;
+    }
+ }
+ 
+
+.navbar-brand img {
+    height: 100%; /* Ensure the logo is vertically centered */
+}
+
+
+
+/* banner section */
+.banner {
+    background-image: url('./assets/banner\ 1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+/* Overlay to darken the banner image for better text readability */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Banner Content Styling */
+.banner-content {
+    position: relative;
+    margin-left: auto;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+}
+/* Custom Button Styling */
+.banner-btn {
+    border-radius: 30px;
+    padding: 13px 28px;
+   
+    background-color: #00b4d8;;
+    border: none;
+    border-radius: 34px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+}
+.banner-btn:hover {
+    background-color: deepskyblue;
+    color: #fff;
+}
+/* Ensure content below banner starts after navbar and banner */
+.content-section {
+    padding: 50px 15px;
+}
+
+
+
+
+
+/* card boxes */
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.9); /* Initial smaller scale for pop effect */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for animation */
+}
+.transparent-box.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+.transparent-box img {
+    max-width: 50px; /* Adjust logo size */
+    margin-right: 15px;
+}
+.transparent-box .content {
+    flex-grow: 1;
+}
+.transparent-box .content h5 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+.transparent-box .content p {
+    font-size: 1rem;
+    color: #7e7e7e;
+    margin: 0;
+}
+/* card boxes ends */
+ 
+
+
+/* why us boxes */
+.box {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.9s ease, opacity 0.8s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.box img {
+    max-width: 50px; /* Adjust logo size */
+    margin-right: 15px;
+}
+.box .content {
+    flex-grow: 1;
+}
+.box .content h5 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+.box .content p {
+    font-size: 1rem;
+    margin: 0;
+    color: #a19e9e;
+}
+.box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.section-caption {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+/* why us boxes ends  */
+
+
+/* our vison our mission */
+.our_vison_box p{
+    font-size: 1rem;
+    margin: 0;
+    color: #797878;
+
+}
+.our_vison_box h2 {
+    color: #00b4d8;
+}
+.our_vison_box{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.our_vison_box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* our vision box ends */
+
+
+/* about box */
+.about-box{
+    
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.about-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* about box */
+
+
+
+
+/* contact section starts */
+.contact-section {
+    margin-top: 8em;
+    margin-bottom: 2em;
+}
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-box {
+    background-color: #e9e7e7; /* Light grey background */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+}
+.info-box i {
+    font-size: 24px;
+    color: black;
+    margin-right: 15px;
+}
+.contact-form {
+    background-color:#e9e7e7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
+}
+.contact-form .form-control {
+    margin-bottom: 10px;
+}
+/* contact section ends */
+
+
+
+
+
+
+
+/* move to top starts */
+
+
+#moveToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #87CEEB; /* Sky blue background */
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#moveToTopBtn i {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+#moveToTopBtn:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+/* move to top ends */
+
+
+
+/* footer swection ends */
+.footer {
+    background-color: #1A2A36; 
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+.footer .social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+.footer .social-icons i:hover {
+    color: #007bff;
+}
+/* footer swection ends */
