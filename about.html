@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./assets/logo.jpeg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+                <img src="./assets/logo valueztech.jfif" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                         <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                        <a class="nav-link active" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact Us</a>
@@ -52,45 +52,63 @@
 
     <!-- about-us -->
     <div class="container my-5">
-        <div class="row align-items-center  about-box" style="margin-top: 6em;">
-            <!-- Image on the Left -->
-            <div class="col-md-6">
-                <h2>About Us</h2>
-                <p>MASERP Technical Services LLP is a pioneering force in asset management, founded by seasoned experts in the Maximo Services industry. With a wealth of experience and a deep understanding of Maximo, our company is dedicated to revolutionizing asset management practices.
-                    <br> <br>
-
-                    We specialize in delivering tailored solutions that cater to the unique needs of each client, encompassing Maximo implementations such as configuration, customization, and data migration. Whether it's optimizing workflows, facilitating seamless upgrades, or providing comprehensive training, we ensure that our solutions align with your business objectives.
-                    <br> <br>
-                    
-                    Our core values of integrity, collaboration, and customer focus drive everything we do, ensuring that we exceed expectations and deliver tangible results. As a forward-thinking organization, we are committed to continuous innovation and staying ahead of industry trends.
-                    <br> <br>
-                    
-                    By investing in research and development, we strive to provide cutting-edge solutions that empower our clients to maximize the potential of IBM Maximo. Partner with MASERP Technical Services LLP, and let's embark on a journey to transform asset management practices and drive success together.
-                </p>
-               
+        <div class="row align-items-center about-box" style="margin-top: 6em;">
+            <!-- Image on the Right for large screens and above the content for small screens -->
+            <div class="col-md-6 order-md-2">
+                <img src="./assets/industrial-2316492_1280.jpg" class="img-fluid rounded mb-4" alt="Image Description">
             </div>
-             <br>
-            <!-- Description on the Right -->
-            <div class="col-md-6 ">
-                <img src="./assets/industrial-2316492_1280.jpg" class="img-fluid rounded" alt="Image Description">
-              
+
+            <!-- Description on the Left -->
+            <div class="col-md-6 order-md-1">
+                <h2>About Us</h2>
+                <p>
+                    MaxTAF is a groundbreaking automation platform that revolutionizes the way organizations interact with enterprise software like IBM Maximo and Salesforce. By combining an intuitive script recorder, low-code scripting, and seamless integration with languages like Java, MaxTAF makes building powerful browser and API-based automations accessible to users of all technical backgrounds. Our all-in-one SaaS solution, featuring a streamlined and efficient UI, serves as both an IDE and a test management platform, optimizing automation tasks from development to execution. Whether it's test automation, data management, performance testing, or innovative training solutions that guide users through live workflows, MaxTAF delivers versatile and powerful automation capabilities that drive efficiency, accuracy, and innovation across your organization.
+                </p>
+                
+                <!-- Hidden Content -->
+                <div id="moreContent" style="display: none;">
+                    <p>Our all-in-one SaaS solution, featuring a streamlined and efficient UI, serves as both an IDE and a test management platform, optimizing automation tasks from development to execution...</p>
+                    
+                    <h3>MaxTAF: Revolutionizing Enterprise Automation with Intuitive and Powerful Solutions</h3>
+                    <p>MaxTAF is a cutting-edge platform engineered to simplify and enhance automation across enterprise software systems like IBM Maximo, Salesforce, and other browser-based applications. Our platform empowers organizations to effortlessly write, manage, execute, and orchestrate both browser and API-based automations, streamlining complex workflows and boosting operational efficiency.</p>
+                    
+                    <h4>Effortless Automation Development</h4>
+                    <ul>
+                        <li>User-Friendly Script Creation: With our intuitive script recorder and low-code scripting environment, users of all technical backgrounds can develop robust automation scripts without steep learning curves.</li>
+                        <li>Seamless Integration with Java: For advanced customization, MaxTAF allows easy extension using programming languages like Java, offering the flexibility to tailor automation to specific needs</li>
+                    </ul>
+                    
+                    <h4>Unified Management and Execution</h4>
+                    <ul>
+                        <li>All-in-One SaaS Platform: Our platform combines the functionalities of an Integrated Development Environment (IDE) and a test management system into a single, streamlined interface.</li>
+                        <li>Optimized for Efficiency: The user-friendly UI is dedicated to simplifying automation tasks, from development to execution, ensuring a smooth and efficient workflow.</li>
+                        <li>Flexible Deployment: Available as a SaaS solution with on-premises options to suit various organizational requirements</li>
+                    </ul>
+                </div>
+
+                <!-- Button to show/hide more content -->
+                <button id="toggleButton" class="btn btn-primary">Read More</button>
             </div>
         </div>
     </div>
+
     <!-- about us  -->
 
-     <!-- footer section starts -->
+
+
+
+<!-- footer section starts -->
 <footer class="footer">
     <div class="container">
         <div class="row">
             <!-- Contact Info -->
             <div class="col-md-4">
                 <h5>Contact Info</h5>
-                <p>Office Address C- 115, Street no. 11, Garmi extension, Bhajanpura Delhi- 110053</p>
-                <p>Chamber number E- 509,   Karkardooma, Courts, Delhi</p>
-                <p>Email: advpraveendedha007@gmail.com
+                <p>15 Lomandra Street Point Cook <br>Melbourne Victoria 3030</p>
+              
+                <p>Email: biplabchoudhury@valueztech.com
                 </p>
-                <p>Whatsapp number : 9650509670</p>
+                <p>Whatsapp number : +61 452 551 481</p>
             </div>
 
             <!-- Useful Links -->
@@ -112,7 +130,10 @@
                 <div class="social-icons">
                  <a href="https://www.facebook.com"> <i class="fab fa-facebook-square"  style="font-size: 48px;" ></i> </a>
                  <a href="https://www.twitter.com" ><i class="fab fa-twitter-square" style="font-size: 48px;"></i> </a>
-                <a href="https://www.instagram.com/advocate_ pravy_dedha" > <i class="fab fa-instagram-square" style="font-size: 48px;"></i> </a>
+                 <a href="https://wa.me/+61452551481" target="_blank">
+                    <i class="bi bi-whatsapp" style="font-size: 43px; color: white;"></i>
+                </a>
+                
                 </div>
             </div>
             <hr>
@@ -120,7 +141,7 @@
                 <div class="row">
                     <!-- Left Description -->
                     <div class="col-md-6">
-                    <h4> © MASERP Technical Services LLP || All Right Reserved.</h4>
+                    <h4> ©  Valueztech Pvt. Ltd  || All Right Reserved.</h4>
                         
                     </div>
         
@@ -147,5 +168,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
+   
+</script>
 </body>
 </html>

@@ -109,3 +109,21 @@ document.addEventListener("DOMContentLoaded", function () {
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
  };
+
+
+
+
+
+
+//  read more
+document.getElementById('toggleButton').addEventListener('click', function () {
+    var moreContent = document.getElementById('moreContent');
+    var button = this;
+    if (moreContent.style.display === 'none') {
+        moreContent.style.display = 'block';
+        button.textContent = 'Show Less';
+    } else {
+        moreContent.style.display = 'none';
+        button.textContent = 'Read More';
+    }
+});
