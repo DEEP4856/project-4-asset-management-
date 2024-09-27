@@ -15,15 +15,15 @@
 </head>
 
 <style>
- .services-section {
+   .services-section {
             text-align: center;
             padding: 50px;
             background-color: #fff;
             margin-top: 5em;
-
         }
-        @media (min-width:800px){
-            .services-section{
+
+        @media (min-width: 800px) {
+            .services-section {
                 margin-top: 40px;
             }
         }
@@ -43,11 +43,12 @@
 
         .service-card {
             display: flex;
-            background-color: #e0e0e0;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Light grey background */
             width: calc(33.333% - 20px);
             padding: 20px;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
             transition: transform 0.3s ease, opacity 0.3s ease;
             border-radius: 8px;
             opacity: 0;
@@ -60,26 +61,20 @@
         }
 
         .service-logo {
-            flex-shrink: 0;
             width: 60px;
             height: 60px;
-            background-color: #ffffff00;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(255, 255, 255, 0);
+            margin-bottom: 15px;
         }
 
         .service-logo img {
-            width: 50px;
-            height: 50px;
+            width: 100%;
+            height: 100%;
         }
 
         .service-caption {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
+            text-align: center;
         }
 
         /* Media Queries for smaller screens */
@@ -135,8 +130,7 @@
 </nav>
 
  
- <!-- service content -->
- <section class="services-section">
+<section class="services-section">
     <h2>Our Services</h2>
     <div class="services-cards">
         <div class="service-card">
@@ -152,7 +146,7 @@
                 <img src="./assets/maxtaf-1.png" alt="Service Logo 2">
             </div>
             <div class="service-caption">
-                	Functional and technical consulting
+                Functional and technical consulting
             </div>
         </div>
         <div class="service-card">
@@ -160,7 +154,7 @@
                 <img src="./assets/maxtaf-2.png" alt="Service Logo 3">
             </div>
             <div class="service-caption">
-                	Data engineering and business intelligence for IBM Maximo
+                Data engineering and business intelligence for IBM Maximo
             </div>
         </div>
         <div class="service-card">
@@ -168,7 +162,7 @@
                 <img src="./assets/maxtaf-4.jfif" alt="Service Logo 4">
             </div>
             <div class="service-caption">
-                	We help customers with their migration to cloud and design infrastructure for it
+                We help customers with their migration to cloud and design infrastructure for it
             </div>
         </div>
         <div class="service-card">
@@ -176,7 +170,7 @@
                 <img src="./assets/max-taf-6.png" alt="Service Logo 5">
             </div>
             <div class="service-caption">
-                	We help customers to embark, adopt and implement AI, Machine learning and GenAI journey
+                We help customers to embark, adopt, and implement AI, Machine learning and GenAI journey
             </div>
         </div>
         <div class="service-card">
@@ -184,7 +178,7 @@
                 <img src="./assets/mobile tick.png" alt="Service Logo 6">
             </div>
             <div class="service-caption">
-                	IBM Maximo mobile implementation
+                IBM Maximo mobile implementation
             </div>
         </div>
         <div class="service-card">
@@ -192,7 +186,7 @@
                 <img src="./assets/maxtaf-4.jfif" alt="Service Logo 7">
             </div>
             <div class="service-caption">
-                	IBM Maximo testing services : Automation and performance.
+                IBM Maximo testing services: Automation and performance
             </div>
         </div>
         <div class="service-card">
@@ -200,7 +194,7 @@
                 <img src="./assets/max-taf-5.png" alt="Service Logo 8">
             </div>
             <div class="service-caption">
-                	Change Management and training for IBM Maximo application suite.
+                Change Management and training for IBM Maximo application suite
             </div>
         </div>
     </div>
@@ -222,7 +216,7 @@
 <!-- footer section starts -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row footer-content">
             <!-- Contact Info -->
             <div class="col-md-4">
                 <h5>Contact Info</h5>
@@ -242,7 +236,7 @@
                     <li><a href="contactus.html">Contact</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="partners.html">Partners</a></li>
-                    <li><a href="Blogs.html">Blogs</a></li>
+                    <li><a href="Blog.html">Blogs</a></li>
                 </ul>
             </div>
 
@@ -263,7 +257,7 @@
                 <div class="row">
                     <!-- Left Description -->
                     <div class="col-md-6">
-                    <h4> ©  Valueztech Pvt. Ltd  || All Right Reserved.</h4>
+                    <h4> ©  Valueztech Pty td  || All Right Reserved.</h4>
                         
                     </div>
         
@@ -290,23 +284,22 @@
     <script src="index.js"></script>
 
     <script>
-        // Intersection Observer API to trigger the pop-out effect on scroll
-        const cards = document.querySelectorAll('.service-card');
+         const cards = document.querySelectorAll('.service-card');
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);  // Stop observing once animation is done
-                }
-            });
-        }, {
-            threshold: 0.5 // Trigger when 50% of the card is in view
-        });
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);  // Stop observing once animation is done
+        }
+    });
+}, {
+    threshold: 0.5 // Trigger when 50% of the card is in view
+});
 
-        cards.forEach(card => {
-            observer.observe(card);
-        });
+cards.forEach(card => {
+    observer.observe(card);
+});
     </script>
 </body>
 </html>

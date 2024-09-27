@@ -443,4 +443,11 @@ font-weight: 400;
 .footer .social-icons i:hover {
     color: #007bff;
 }
+
+@media (max-width:600px){
+.footer-content{
+    text-align: center;
+}
+
+}
 /* footer swection ends */
