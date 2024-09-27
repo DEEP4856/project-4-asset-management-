@@ -69,7 +69,7 @@ html{
 
 /* banner section */
 .banner {
-    background-image: url('https://www.maxtaf.com/wp-content/uploads/2024/01/MaxTAF-web-hero-a.jpg'); /* Replace with your image URL */
+    background-image: url('./assets/digital-transformation.webp'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
     height: 650px;
