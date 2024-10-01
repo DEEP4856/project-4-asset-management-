@@ -343,39 +343,158 @@ font-weight: 300;
 
 
 /* contact section starts */
+/* Services section overall styling */
+/* Services section overall styling */
+/* Services section overall styling */
+/* Services section overall styling */
+
+  .services-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-logo {
+    font-size: 3rem; /* Icon size */
+    color: #333; /* Icon color */
+    margin-bottom: 10px;
+}
+
+/* Caption styling */
+.service-caption {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Square cards for larger screens */
+@media (min-width: 1024px) {
+    .service-card {
+        height: 300px; /* Make the cards square */
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 1 calc(100% - 20px); /* One card per row */
+    }
+}
+
+
+/* contact section ends */
+
+
+
+
+/* contact section strats */
+/* Contact Section */
 .contact-section {
     margin-top: 8em;
     margin-bottom: 2em;
 }
+
+/* Centered Contact Title */
 .contact-title {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    color: #000000; /* Deep blue color */
+    margin-bottom: 40px;
 }
-.info-box {
-    background-color: #e9e7e7; /* Light grey background */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
-}
-.info-box i {
-    font-size: 24px;
-    color: black;
-    margin-right: 15px;
-}
+
+/* Contact Form */
 .contact-form {
-    background-color:#e9e7e7;
+    background-color: #e9e7e7; /* Light grey background */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added */
 }
+
 .contact-form .form-control {
     margin-bottom: 10px;
+    border-radius: 5px;
 }
-/* contact section ends */
+
+/* Button Styling */
+.banner-btn {
+    background-color: #00b4d8; /* Deep blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background-color:#0a2a5a; /* Lighter blue on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form {
+        padding: 15px;
+    }
+    
+    .banner-btn {
+        width: 100%; /* Full-width button on small screens */
+    }
+}
+
+/* contact section strats */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
