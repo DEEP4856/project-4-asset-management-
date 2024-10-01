@@ -6,14 +6,20 @@ html{
 
 .navbar {
     padding: 0; /* Remove padding inside the navbar */
+    background-color: #1A2A36;
 }
+
+
+
+
+
 .navbar-nav .nav-link {
     padding-right: 20px;
     padding-left: 20px;
     height: 100%; /* Make links full height */
     display: flex;
     align-items: center;
-
+     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -37,6 +43,11 @@ html{
     font-size: larger;
     border-radius: 0; /* Remove any border-radius to keep it rectangular */
 }
+
+.btn-custom:hover{
+    color: #fff;
+}
+
 @media (min-width: 900px) {
     .btn-custom{
      margin-right: -12px;
@@ -48,6 +59,9 @@ html{
     .nav_li{
        display: none;
     }
+
+
+
  }
  
 
@@ -59,12 +73,14 @@ html{
 @media (max-width:600px){
     .navbar-brand img{
         height: 5em;
-        width: 5em;
+        width: 6.3em;
     }
 }
 
 
-
+.navbar-toggler-icon{
+    color: #fff !important;
+}
 
 
 /* banner section */
@@ -181,6 +197,12 @@ font-weight: 300;
     font-size: 1rem;
     color: #7e7e7e;
     margin: 0;
+}
+
+@media (max-width:600px){
+    .transparent-box{
+        
+    }
 }
 /* card boxes ends */
  

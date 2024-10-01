@@ -1,3 +1,16 @@
+// navbar
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('customNavbar');
+    if (window.scrollY > 50) { // Trigger background change after 50px scroll
+      navbar.classList.add('custom-navbar-scrolled');
+    } else {
+      navbar.classList.remove('custom-navbar-scrolled');
+    }
+  });
+
+
+
+
 
 // card bopxes in home page
 document.addEventListener("DOMContentLoaded", function () {
