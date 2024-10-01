@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(box);
     });
 });
+
+
+
 // our vision box
 document.addEventListener("DOMContentLoaded", function () {
     const boxes = document.querySelectorAll('.our_vison_box');
@@ -126,4 +129,15 @@ document.getElementById('toggleButton').addEventListener('click', function () {
         moreContent.style.display = 'none';
         button.textContent = 'Read More';
     }
+});
+
+
+
+// Add event listener to toggle the icons between '+' and '-'
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const icon = button.querySelector('.icon');
+        const isExpanded = button.classList.contains('collapsed');
+        icon.textContent = isExpanded ? '-' : '+';
+    });
 });

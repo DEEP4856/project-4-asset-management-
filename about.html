@@ -12,6 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
+<style>
+    /* Blue Background Section */
+.center-section {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 100px 20px; /* Spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust height as needed */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.section-caption-about {
+    font-size: 48px; /* Large caption size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.section-description {
+    font-size: 20px; /* Slightly smaller text for description */
+    max-width: 600px; /* Limit the width of the description text */
+    margin: 0 auto;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-caption {
+        font-size: 32px; /* Smaller caption for mobile */
+    }
+    
+    .section-description {
+        font-size: 18px; /* Smaller description text for mobile */
+    }
+}
+
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
@@ -62,28 +122,34 @@
             <div class="col-md-6 order-md-1">
                 <h2>About Us</h2>
                 <p>
-                    MaxTAF is a groundbreaking automation platform that revolutionizes the way organizations interact with enterprise software like IBM Maximo and Salesforce. By combining an intuitive script recorder, low-code scripting, and seamless integration with languages like Java, MaxTAF makes building powerful browser and API-based automations accessible to users of all technical backgrounds. Our all-in-one SaaS solution, featuring a streamlined and efficient UI, serves as both an IDE and a test management platform, optimizing automation tasks from development to execution. Whether it's test automation, data management, performance testing, or innovative training solutions that guide users through live workflows, MaxTAF delivers versatile and powerful automation capabilities that drive efficiency, accuracy, and innovation across your organization.
+                    As a leading digital transformation company, Valueztech Pty Ltd specializes in the implementation, upgrade, and support of the IBM Maximo Application Suite. 
+
+                    <br><br>
+Our expertise is built on a rich history of delivering successful Maximo projects that enhance asset management, improve operational efficiency, and foster innovation for asset-intensive industries. Through our fit-for-purpose agile model, we provide customized business transformation consulting and project delivery services. 
+<br><br>
+Every solution we implement is tailored to the unique needs of our clients, ensuring both short-term efficiency and long-term sustainability. We are committed to driving value and helping companies stay ahead in a fast-paced, ever-changing technological landscape.
+
                 </p>
                 
                 <!-- Hidden Content -->
                 <div id="moreContent" style="display: none;">
-                    <p>Our all-in-one SaaS solution, featuring a streamlined and efficient UI, serves as both an IDE and a test management platform, optimizing automation tasks from development to execution...</p>
-                    
-                    <h3>MaxTAF: Revolutionizing Enterprise Automation with Intuitive and Powerful Solutions</h3>
-                    <p>MaxTAF is a cutting-edge platform engineered to simplify and enhance automation across enterprise software systems like IBM Maximo, Salesforce, and other browser-based applications. Our platform empowers organizations to effortlessly write, manage, execute, and orchestrate both browser and API-based automations, streamlining complex workflows and boosting operational efficiency.</p>
-                    
-                    <h4>Effortless Automation Development</h4>
-                    <ul>
-                        <li>User-Friendly Script Creation: With our intuitive script recorder and low-code scripting environment, users of all technical backgrounds can develop robust automation scripts without steep learning curves.</li>
-                        <li>Seamless Integration with Java: For advanced customization, MaxTAF allows easy extension using programming languages like Java, offering the flexibility to tailor automation to specific needs</li>
+              
+                    <h3>Why Choose Us</h3>
+                    <p>At Valueztech, we stand out because of our extensive expertise in IBM Maximo, our agile project delivery approach, and our deep understanding of asset management
+
+                        <br><ul>
+                        <li>Our team of highly skilled professionals works closely with clients to deliver tailored solutions that align with their business objectives and long-term goals. </li>
+
+                        <br>
+                       <li> From cloud migration to AI adoption and Maximo mobile implementation, we offer comprehensive services that drive business transformation.</li>
+
+                        <br>
+                       <li> We pride ourselves on delivering high-quality solutions on time and within budget, ensuring that our clients achieve optimal operational performance while remaining competitive in their industries.</li>
                     </ul>
+                    </p>
                     
-                    <h4>Unified Management and Execution</h4>
-                    <ul>
-                        <li>All-in-One SaaS Platform: Our platform combines the functionalities of an Integrated Development Environment (IDE) and a test management system into a single, streamlined interface.</li>
-                        <li>Optimized for Efficiency: The user-friendly UI is dedicated to simplifying automation tasks, from development to execution, ensuring a smooth and efficient workflow.</li>
-                        <li>Flexible Deployment: Available as a SaaS solution with on-premises options to suit various organizational requirements</li>
-                    </ul>
+                    
+                    
                 </div>
 
                 <!-- Button to show/hide more content -->
@@ -93,6 +159,62 @@
     </div>
 
     <!-- about us  -->
+
+
+
+
+   <!-- 2nd about section -->
+   <section class="center-section">
+    <div class="content-container">
+        <h2 class="section-caption-about">Our Mission</h2>
+        <p class="section-description">
+            Our mission at Valueztech Pty Ltd is to empower businesses through innovative digital solutions, with a focus on transforming their asset management and operational efficiency.
+            <br> 
+            We aim to bridge the gap between technology and business strategy, ensuring our clients harness the full potential of IBM Maximo and other advanced technologies.
+            <br><br> 
+            Through our commitment to excellence and a customer-centric approach, we strive to deliver solutions that not only address current challenges but also prepare businesses for future growth and sustainability.
+            
+        </p>
+    </div>
+</section>
+   <section class="center-section">
+    <div class="content-container">
+        <h2 class="section-caption-about">Our Vission</h2>
+        <p class="section-description">
+            Our vision is to be a global leader in digital transformation, known for revolutionizing the way businesses manage their assets and operations. 
+            <br>
+            We envision a future where businesses of all sizes and industries leverage cutting-edge technology, such as AI, machine learning, and cloud-based infrastructure, to achieve unprecedented efficiency and innovation.
+            <br><br>
+
+            By continually evolving and adapting to technological advancements, we aim to become the go-to partner for businesses seeking to enhance their operational performance and drive long-term value through digital transformation.
+            
+            
+        </p>
+    </div>
+</section>
+   <section class="center-section">
+    <div class="content-container">
+        <h2 class="section-caption-about">Our Core Values</h2>
+        <p class="section-description">
+            At the heart of Valueztech are the core values that guide our actions and decisions. We believe in innovation, constantly seeking new and better ways to solve challenges for our clients. 
+            <br>
+Integrity is central to everything we do—we are committed to transparency, honesty, and accountability in our relationships and projects.
+<br><br> 
+We value collaboration, working closely with clients, partners, and within our teams to ensure successful outcomes. 
+Lastly, we prioritize excellence in all aspects of our services, aiming to exceed client expectations and deliver solutions that drive lasting business success.
+
+            
+            
+        </p>
+    </div>
+</section>
+
+   <!-- 2nd about section -->
+
+
+
+
+
 
 
 
