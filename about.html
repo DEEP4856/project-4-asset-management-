@@ -74,6 +74,83 @@
     }
 }
 
+
+/* abot person */
+
+.image-description-section {
+    padding: 50px 0;
+}
+
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.description-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+.btn-custom-about {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.btn-custom-about:hover {
+    background-color: #0056b3; /* Hover color */
+    color: #fff;
+}
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    .circular-image {
+        margin-bottom: 20px;
+    }
+
+    .description-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .description-content p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .btn-custom-about {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg fixed-top" >
@@ -107,7 +184,7 @@
                         <a class="nav-link" href="Blog.html">Blogs</a>
                     </li>
                     <li class="nav-item nav_li">
-                        <a class="btn btn-custom" href="contactus.html">Get a Quote </a>
+                        <a class="btn btn-custom" href="contactus.html">Contact Us </a>
                     </li>
                 </ul>
             </div>
@@ -182,6 +259,29 @@ Every solution we implement is tailored to the unique needs of our clients, ensu
         </p>
     </div>
 </section>
+
+
+<section class="image-description-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Circular Image -->
+            <div class="col-md-4 col-sm-12 text-center">
+                <img src="./assets/biplab-profile.jfif" alt="Profile Image" class="circular-image">
+            </div>
+            <!-- Right Side: Description -->
+            <div class="col-md-8 col-sm-12">
+                <div class="description-content">
+                    <h2>Biplab Das Choudhury</h2>
+                    <p>MBA candidate at Melbourne Business School with background in Asset and Work management domain. AWS Certified Solution Architect – Associate and IBM Champion 2022, 2023 & 2024. Business transformation and Technology solutions expertise in Enterprise Asset and work management. Astute individual who goes above and beyond to envision customer centric solutions. </p>
+                    <a href="https://www.linkedin.com/in/biplab-das-choudhury" class="btn-custom-about">know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
    <section class="center-section">
     <div class="content-container">
         <h2 class="section-caption-about">Our Vission</h2>
@@ -197,6 +297,8 @@ Every solution we implement is tailored to the unique needs of our clients, ensu
         </p>
     </div>
 </section>
+
+
    <section class="center-section">
     <div class="content-container">
         <h2 class="section-caption-about">Our Core Values</h2>
