@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Valueztech Pty td">
+    <meta name="title" content="Valueztech">
     <meta name="description" content="Unlock the full potential of your asset and work management systems with our advanced digital solutions. We streamline operations, enhance data-driven decisions and improve asset performance through cutting-edge technologies. 
     Partner with us to drive efficiency, decrease downtime and achieve sustainable growth during your digital journey. ">
-    <title> Valueztech Pty td</title>
+    <title> Valueztech </title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -76,9 +76,9 @@
 
 
 /* abot person */
-
 .image-description-section {
     padding: 50px 0;
+    text-align: center; /* Ensure everything is centered */
 }
 
 .circular-image {
@@ -87,6 +87,11 @@
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.description-content {
+    text-align: center;
 }
 
 .description-content h2 {
@@ -95,17 +100,10 @@
     margin-bottom: 15px;
 }
 
-.description-content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
-
-
 .btn-custom-about {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Button color */
+    background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -114,39 +112,27 @@
 }
 
 .btn-custom-about:hover {
-    background-color: #0056b3; /* Hover color */
+    background-color: #0056b3;
     color: #fff;
 }
-
-
-
 
 /* Responsive Styling */
 @media (max-width: 767px) {
     .circular-image {
+        width: 150px; /* Adjust image size on small screens */
+        height: 150px;
         margin-bottom: 20px;
     }
 
     .description-content h2 {
         font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .description-content p {
-        font-size: 0.9rem;
-        text-align: center;
     }
 
     .btn-custom-about {
         display: block;
-        text-align: center;
+        margin: 20px auto; /* Center the button */
     }
 }
-
-
-
-
-
 
 
 
@@ -260,25 +246,21 @@ Every solution we implement is tailored to the unique needs of our clients, ensu
     </div>
 </section>
 
-
 <section class="image-description-section">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Side: Circular Image -->
-            <div class="col-md-4 col-sm-12 text-center">
+        <div class="row justify-content-center align-items-center">
+            <!-- Left Side: Circular Image and Description -->
+            <div class="col-md-8 col-sm-12 text-center">
                 <img src="./assets/biplab-profile.jfif" alt="Profile Image" class="circular-image">
-            </div>
-            <!-- Right Side: Description -->
-            <div class="col-md-8 col-sm-12">
                 <div class="description-content">
-                    <h2>Biplab Das Choudhury</h2>
-                    <p>MBA candidate at Melbourne Business School with background in Asset and Work management domain. AWS Certified Solution Architect – Associate and IBM Champion 2022, 2023 & 2024. Business transformation and Technology solutions expertise in Enterprise Asset and work management. Astute individual who goes above and beyond to envision customer centric solutions. </p>
-                    <a href="https://www.linkedin.com/in/biplab-das-choudhury" class="btn-custom-about">know More</a>
+                    <h2>Director</h2>
+                    <a href="https://www.linkedin.com/in/biplab-das-choudhury" class="btn-custom-about">Know More</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 
 
